@@ -5,6 +5,31 @@ body {
   color: #000;
   scroll-behavior: smooth;
 }
+/* Kustom Tombol Utama */
+.btn-primary-custom {
+  background-color: #b00020;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #8c001a;
+  transform: scale(1.05);
+}
+
+/* Efek Hover Logo */
+.hero-content img {
+  transition: transform 0.3s ease;
+}
+
+.hero-content img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+/* Overlay Gelap */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
 .bg-primary-custom {
   background-color: #8B0000;
