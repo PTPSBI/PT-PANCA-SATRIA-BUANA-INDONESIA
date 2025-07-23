@@ -1,0 +1,18 @@
+/* === responsive.css === */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .equal-img {
+    height: auto;
+  }
+
+  .partner-logo {
+    max-height: 60px;
+  }
+}

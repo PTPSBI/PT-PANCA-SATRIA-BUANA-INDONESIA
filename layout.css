@@ -1,0 +1,31 @@
+.hero {
+  background: url('../assets/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.navbar {
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1c1c1c;
+  color: #ccc;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}

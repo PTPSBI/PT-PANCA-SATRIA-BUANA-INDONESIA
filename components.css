@@ -1,0 +1,25 @@
+/* Scroll Top */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: none;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 14px;
+  border-radius: 50%;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
