@@ -252,3 +252,20 @@ form input[type="file"]::file-selector-button {
   color: #ff4444;
   transition: color 0.3s;
 }
+.footer {
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer h5 {
+  color: #ffffff;
+}
+
+.footer p,
+.footer small {
+  color: #cccccc;
+}
