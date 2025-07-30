@@ -1,18 +1,36 @@
 /* === responsive.css === */
+/* Tampilan untuk perangkat dengan lebar maksimal 768px (tablet dan bawah) */
 @media (max-width: 768px) {
+  
+  /* Navbar */
   .navbar-nav {
     text-align: center;
   }
 
+  /* Hero Section */
   .hero h1 {
     font-size: 2rem;
   }
 
+  /* Gambar Dokumentasi (agar tinggi fleksibel) */
   .equal-img {
     height: auto;
   }
 
+  /* Logo Partner (dikecilkan agar proporsional di layar kecil) */
   .partner-logo {
     max-height: 60px;
   }
+
 }
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
