@@ -1,100 +1,30 @@
-/* Font dan warna dasar */
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ce7575;
-  color: #000;
+  background-color: #fff;
+  color: #222;
   scroll-behavior: smooth;
 }
-/* Kustom Tombol Utama */
-.btn-primary-custom {
-  background-color: #b00020;
-  border: none;
-  transition: all 0.3s ease;
-}
 
-.btn-primary-custom:hover {
-  background-color: #8c001a;
-  transform: scale(1.05);
-}
-
-/* Efek Hover Logo */
-.hero-content img {
-  transition: transform 0.3s ease;
-}
-
-.hero-content img:hover {
-  transform: scale(1.05) rotate(1deg);
-}
-
-/* Overlay Gelap */
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.bg-primary-custom {
-  background-color: #8B0000;
-}
-
-.text-primary-custom {
-  color: #f5f2f2;
-}
-
-.btn-primary-custom {
-  background-color: #8B0000;
-  color: white;
-  border: none;
-  transition: background-color 0.3s;
-}
-
-.btn-primary-custom:hover {
-  background-color: #da6b6b;
-}
-
-.hero {
-  position: relative;
-  height: 100vh;
-  min-height: 500px;
-}
-
-.video-background video {
-  object-fit: cover;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.hero-content h1, .hero-content p {
-  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
-}
-
-.btn-primary-custom {
-  background-color: #b30000;
-  border: none;
-  color: #fff;
-}
-
-.btn-primary-custom:hover {
-  background-color: #8c0000;
-  color: #fff;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 
-/* Navbar */
-.navbar {
-  font-weight: 500;
-}
-
-.navbar-brand {
-  font-weight: bold;
-}
-
-/* Section Title */
+/* === Typography === */
 .section-title {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2rem;
   font-weight: 600;
+  color: #c40000;
   position: relative;
   display: inline-block;
 }
@@ -109,7 +39,79 @@ body {
   border-radius: 2px;
 }
 
-/* Fitur & Layanan */
+.text-primary-custom {
+  color: #b30000;
+}
+
+
+/* === Buttons === */
+.btn-primary-custom {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #8c0000;
+  color: #fff;
+}
+
+
+/* === Hero Section === */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  background: url('../assets/hero-bg.jpg') no-repeat center center / cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.hero-content h1,
+.hero-content p {
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.hero-content img {
+  transition: transform 0.3s ease;
+}
+
+.hero-content img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video-background video {
+  object-fit: cover;
+}
+
+
+/* === Navbar === */
+.navbar {
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+
+/* === Features & Services === */
 .feature-icon {
   font-size: 2.5rem;
   color: #8B0000;
@@ -128,18 +130,75 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Gambar Gallery */
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s;
+#fitur img {
+  transition: transform 0.3s ease;
 }
 
-.gallery img:hover {
+#fitur img:hover {
   transform: scale(1.05);
 }
 
-/* Form Kontak */
+
+/* === Gallery & Dokumentasi === */
+.gallery img,
+.equal-img,
+.dokumentasi-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover,
+.equal-img:hover,
+.dokumentasi-img:hover {
+  transform: scale(1.05);
+}
+
+.dokumentasi-item {
+  aspect-ratio: 4 / 3;
+  transition: transform 0.3s ease;
+}
+
+.dokumentasi-item:hover {
+  transform: scale(1.03);
+}
+
+
+/* === Cards === */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top,
+.card:hover .dokumentasi-img {
+  transform: scale(1.03);
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* === Forms === */
 form .form-label {
   font-weight: 500;
 }
@@ -147,57 +206,6 @@ form .form-label {
 form .form-control:focus {
   border-color: #8B0000;
   box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.25);
-}
-
-/* Footer */
-footer {
-  background-color: #1c1c1c;
-  color: #ccc;
-  font-size: 0.9rem;
-}
-
-.partner-logo {
-  max-height: 80px;
-  object-fit: contain;
-  filter: grayscale(40%);
-  transition: transform 0.3s;
-}
-
-.partner-logo:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #c40000; /* Warna merah khas PSBI */
-}
-
-#fitur img {
-  transition: transform 0.3s ease;
-}
-#fitur img:hover {
-  transform: scale(1.05);
-}
-
-.equal-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px; /* opsional, untuk sudut membulat */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* opsional, agar lebih elegan */
-}
-
-.equal-img {
-  transition: transform 0.3s ease;
-}
-.equal-img:hover {
-  transform: scale(1.05);
-}
-
-form .form-label {
-  font-weight: 500;
 }
 
 form input[type="file"]::file-selector-button {
@@ -210,51 +218,35 @@ form input[type="file"]::file-selector-button {
   cursor: pointer;
 }
 
-.carousel-img {
-  height: 250px; /* Atur tinggi yang konsisten */
-  object-fit: cover; /* Memastikan gambar tetap rapi tanpa melar */
-  object-position: center; /* Fokus pada tengah gambar */
-  border-top-left-radius: .20rem;
-  border-top-right-radius: .20rem;
-}
 
-.text-primary-custom {
-  color: #b30000; /* Warna utama PSBI */
-}
-
-.service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.dokumentasi-item {
-  aspect-ratio: 4 / 3;
-  transition: transform 0.3s ease;
-}
-
-.dokumentasi-item:hover {
-  transform: scale(1.03);
-}
-
-.object-fit-cover {
-  object-fit: cover;
-  height: 100%;
+/* === Partner Logos === */
+.partner-logo {
+  max-height: 80px;
   width: 100%;
-  display: block;
-  border-radius: 12px;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  filter: grayscale(40%);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.footer i:hover {
-  color: #ff4444;
-  transition: color 0.3s;
+.partner-logo:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
+
+
+/* === Footer === */
+footer,
 .footer {
-  font-size: 0.95rem;
+  background-color: #1c1c1c;
+  color: #ccc;
+  font-size: 0.9rem;
   letter-spacing: 0.3px;
+  padding: 1rem;
 }
 
 .footer hr {
@@ -268,4 +260,18 @@ form input[type="file"]::file-selector-button {
 .footer p,
 .footer small {
   color: #cccccc;
+}
+
+
+/* === Utilities === */
+.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+#yearFilter {
+  min-width: 200px;
 }
