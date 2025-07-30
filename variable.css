@@ -1,8 +1,13 @@
 :root {
-  --primary-color: #8B0000;
-  --secondary-color: #da6b6b;
-  --background-color: #ce7575;
-  --text-light: #f5f2f2;
-  --text-dark: #000;
-  --font-family: 'Poppins', sans-serif;
+  /* Warna Utama */
+  --primary-color:      #8B0000;  /* Merah tua */
+  --secondary-color:    #da6b6b;  /* Merah muda hangat */
+  --background-color:   #ce7575;  /* Latar merah lembut */
+
+  /* Warna Teks */
+  --text-light:         #f5f2f2;  /* Teks terang */
+  --text-dark:          #000000;  /* Teks gelap */
+
+  /* Tipografi */
+  --font-family:        'Poppins', sans-serif;
 }
