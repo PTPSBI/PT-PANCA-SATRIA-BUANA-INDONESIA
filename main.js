@@ -19,3 +19,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const filter = document.getElementById('yearFilter');
+    const yearSections = document.querySelectorAll('.year-section');
+
+    filter.addEventListener('change', function () {
+      const selectedYear = this.value;
+
+      yearSections.forEach(section => {
+        if (selectedYear === 'all' || section.dataset.year === selectedYear) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  });
+
+
+
