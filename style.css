@@ -1,277 +1,133 @@
-/* === Reset & Base === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===== FONT SCALE GLOBAL ===== */
+html {
+  font-size: 16px;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
-  color: #222;
-  scroll-behavior: smooth;
+@media (max-width: 991px) {
+  html {
+    font-size: 15px;
+  }
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
 }
 
-
-/* === Typography === */
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #c40000;
-  position: relative;
-  display: inline-block;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: #8B0000;
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
-
-.text-primary-custom {
-  color: #b30000;
-}
-
-
-/* === Buttons === */
-.btn-primary-custom {
-  background-color: #b30000;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  transition: background-color 0.3s;
-}
-
-.btn-primary-custom:hover {
-  background-color: #8c0000;
-  color: #fff;
-}
-
-
-/* === Hero Section === */
 .hero {
-  position: relative;
   height: 100vh;
-  min-height: 500px;
-  background: url('../assets/hero-bg.jpg') no-repeat center center / cover;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
+  position: relative;
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
-.hero-content h1,
 .hero-content p {
-  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
-.hero-content img {
-  transition: transform 0.3s ease;
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero img {
+    width: 90px;
+  }
 }
 
-.hero-content img:hover {
-  transform: scale(1.05) rotate(1deg);
+@media (max-width: 480px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+.section {
+  padding: 80px 0;
 }
 
-.video-background video {
-  object-fit: cover;
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
 }
 
-
-/* === Navbar === */
-.navbar {
-  font-weight: 500;
+@media (max-width: 480px) {
+  .section {
+    padding: 45px 0;
+  }
 }
 
-.navbar-brand {
-  font-weight: bold;
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
 }
 
-
-/* === Features & Services === */
-.feature-icon {
-  font-size: 2.5rem;
-  color: #8B0000;
-  margin-bottom: 10px;
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
 }
 
-#layanan .border,
-#fitur .col-md-4 {
-  background-color: #fff;
-  transition: transform 0.3s, box-shadow 0.3s;
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
 }
 
-#layanan .border:hover,
-#fitur .col-md-4:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#fitur img {
-  transition: transform 0.3s ease;
-}
-
-#fitur img:hover {
-  transform: scale(1.05);
-}
-
-
-/* === Gallery & Dokumentasi === */
-.gallery img,
-.equal-img,
-.dokumentasi-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover,
-.equal-img:hover,
-.dokumentasi-img:hover {
-  transform: scale(1.05);
-}
-
-.dokumentasi-item {
-  aspect-ratio: 4 / 3;
-  transition: transform 0.3s ease;
-}
-
-.dokumentasi-item:hover {
-  transform: scale(1.03);
-}
-
-
-/* === Cards === */
-.card-img-top {
-  height: 220px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.card:hover .card-img-top,
-.card:hover .dokumentasi-img {
-  transform: scale(1.03);
-}
-
-.card {
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
-}
-
-.service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-
-/* === Forms === */
-form .form-label {
-  font-weight: 500;
-}
-
-form .form-control:focus {
-  border-color: #8B0000;
-  box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.25);
-}
-
-form input[type="file"]::file-selector-button {
-  background-color: #8B0000;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  margin-right: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-/* === Partner Logos === */
-.partner-logo {
-  max-height: 80px;
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: contain;
-  background-color: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  filter: grayscale(40%);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.partner-logo:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-}
-
-
-/* === Footer === */
-footer,
-.footer {
-  background-color: #1c1c1c;
-  color: #ccc;
-  font-size: 0.9rem;
-  letter-spacing: 0.3px;
-  padding: 1rem;
-}
-
-.footer hr {
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.footer h5 {
-  color: #ffffff;
-}
-
-.footer p,
-.footer small {
-  color: #cccccc;
-}
-
-
-/* === Utilities === */
-.object-fit-cover {
-  object-fit: cover;
+.card-simple {
+  padding: 30px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
   height: 100%;
-  width: 100%;
-  display: block;
-  border-radius: 12px;
 }
 
-#yearFilter {
-  min-width: 200px;
+.card-simple h5 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.card-simple p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .card-simple {
+    padding: 22px;
+  }
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-nav {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+  }
 }
