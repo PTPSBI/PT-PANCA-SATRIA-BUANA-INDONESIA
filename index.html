@@ -1,698 +1,173 @@
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PT. PANCA SATRIA BUANA INDONESIA</title>
 
-  <!-- SEO & Google Tag -->
-  <meta name="google-site-verification" content="xYiMruei0HhWSd4CZ9GFZ_FFmdsqGdM1BKLyfFTuCmQ" />
-  <meta name="description" content="PT PSBI adalah penyedia layanan keamanan, bodyguard, K9 unit dan cleaning service profesional di Indonesia.">
-  <meta name="keywords" content="Jasa Security, PSBI, Bodyguard, Cleaning Service, K9, Satpam, Keamanan">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="PT. PANCA SATRIA BUANA INDONESIA">
+  <!-- SEO -->
+  <meta name="description" content="PT. PANCA SATRIA BUANA INDONESIA (PSBI) adalah perusahaan jasa keamanan profesional.">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/sections.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Bootstrap & Font -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  
-
-
-
-
-  <!-- Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
-  <script src="js/main.js" defer></script>
-
-  <!-- Global Style -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      color: #000;
-      scroll-behavior: smooth;
     }
-    .bg-primary-custom { background-color: #8B0000; }
-    .text-primary-custom { color: #8B0000; }
-    .btn-primary-custom {
-      background-color: #8B0000;
-      color: white;
-      border: none;
-      transition: background-color 0.3s;
-    }
-    .btn-primary-custom:hover { background-color: #b22222; }
     .hero {
-      position: relative;
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url("hero.jpg") center/cover no-repeat;
       height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: center;
       text-align: center;
-      color: white;
-      overflow: hidden;
+      color: #fff;
     }
-    .video-background video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
+    .section {
+      padding: 80px 0;
     }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      text-shadow: 2px 2px 4px #000;
-    }
-    .feature-icon {
-      font-size: 2.5rem;
-      color: #8B0000;
-    }
-    .gallery img,
-    .partner-logo,
-    .equal-img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover,
-    .partner-logo:hover,
-    .equal-img:hover {
-      transform: scale(1.05);
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-      font-weight: 700;
-    }
-    .partner-logo { max-height: 80px; }
-    footer { background-color: #8B0000; }
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .btn-primary-custom { font-size: 0.9rem; }
-    }
-    form .form-label { font-weight: 500; }
-    form input:invalid,
-    form textarea:invalid,
-    form select:invalid { border-color: #dc3545; }
-    form input:valid,
-    form textarea:valid,
-    form select:valid { border-color: #28a745; }
   </style>
 </head>
 
 <body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      AOS.init({ duration: 800, once: true, easing: "ease-in-out" });
-    });
-  </script>
-  
-  <div class="video-background">
-  <video autoplay muted loop playsinline>
-    <source src="vidio1.mp4" type="video/mp4">
-    Browser Anda tidak mendukung tag video.
-  </video>
-</div>
 
-
-<!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">PSBI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
-          <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#visi">Visi & Misi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
-          <li class="nav-item"><a class="nav-link" href="#partner">Partner</a></li>
-          <li class="nav-item"><a class="nav-link" href="#dokumentasi">Dokumentasi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#rekrutmen">Rekrutmen</a></li>
-          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
-        </ul>
-      </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">PSBI</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link" href="rekrutmen.html">Rekrutmen</a></li>
+      </ul>
     </div>
-  </nav>
-
-<!-- Hero Section -->
-<header class="hero position-relative vh-100 overflow-hidden text-white">
-  <!-- Background Video -->
-  <div class="video-background position-absolute top-0 start-0 w-100 h-100">
-    <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover">
-      <source src="vidio1.mp4" type="video/mp4">
-    </video>
-    <!-- Overlay Gelap -->
-    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
   </div>
+</nav>
 
-  <!-- Hero Content -->
-  <div class="hero-content position-relative z-2 h-100 d-flex flex-column justify-content-center align-items-center text-center px-3">
-    <img src="logo-psbi.jpeg" width="130" class="mb-4 rounded-circle shadow-lg border border-white border-3" alt="Logo PSBI">
-    <h1 class="display-5 fw-bold mb-2 animate__animated animate__fadeInDown">PT. PANCA SATRIA BUANA INDONESIA</h1>
-    <p class="lead mb-4 animate__animated animate__fadeInUp">Security Service </p>
-    <a href="#profil" class="btn btn-primary-custom btn-lg rounded-pill px-5 shadow animate__animated animate__fadeInUp animate__delay-1s">
-      Selengkapnya
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <img src="logo-psbi.jpeg" width="100" class="mb-4 rounded-circle">
+    <h1 class="fw-bold">PT. PANCA SATRIA BUANA INDONESIA</h1>
+    <p class="lead">Professional Security Service</p>
+    <a href="profil.html" class="btn btn-danger rounded-pill px-4 mt-3">
+      Profil Perusahaan
     </a>
   </div>
-</header>
+</section>
 
+<!-- ABOUT -->
+<section class="section text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Tentang Kami</h2>
+    <p class="mx-auto" style="max-width:700px">
+      PSBI adalah perusahaan jasa keamanan profesional yang berkomitmen
+      memberikan layanan pengamanan dengan standar tinggi, disiplin,
+      dan integritas.
+    </p>
+  </div>
+</section>
 
+<!-- SERVICES -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Layanan Utama</h2>
+    <div class="row g-4 text-center">
 
-  <!-- Tambahan Fitur: Testimoni Klien -->
-  <section id="testimoni" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-primary-custom">Apa Kata Klien Kami</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="p-4 bg-white shadow rounded">
-            <p><i class="bi bi-quote text-primary-custom"></i> Pelayanan dari PSBI sangat profesional dan responsif. Tim keamanan mereka membantu event besar kami berjalan aman dan lancar.</p>
-            <p class="mb-0 fw-bold">- Manajer Event, Jakarta</p>
-          </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h5>Security Gedung</h5>
+          <p>Pengamanan kantor, pabrik, dan area komersial.</p>
         </div>
-        <div class="col-md-6">
-          <div class="p-4 bg-white shadow rounded">
-            <p><i class="bi bi-quote text-primary-custom"></i> Petugas cleaning service PSBI sangat ramah dan telaten. Gedung kami selalu bersih setiap hari.</p>
-            <p class="mb-0 fw-bold">- HRD Perkantoran, Jakarta</p>
-          </div>
+      </div>
+
+        <div class="col-md-4">
+         <div class="p-4 bg-white shadow-sm rounded">
+        <h5>Cleaning Service</h5>
+         <p>Layanan kebersihan profesional dengan standar kerja tinggi.</p>
+     </div>
+    </div>
+
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h5>Event & VIP</h5>
+          <p>Pengamanan profesional acara dan tamu penting.</p>
+        </div>
+      </div>
         </div>
       </div>
     </div>
-  </section>
-  
- <main class="container py-5">
- 
-  <!-- Section Blog / Berita -->
-<section id="berita" class="py-5 bg-light">
+  </div>
+</section>
+
+<!-- BERITA & KEGIATAN -->
+<section class="section">
   <div class="container">
-    <h2 class="section-title text-center text-primary-custom mb-5">Berita & Kegiatan</h2>
+    <h2 class="fw-bold text-center mb-5">Berita & Kegiatan</h2>
+
     <div class="row g-4">
 
-      <!-- Card Berita 1 -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
-          <div id="carouselBerita1" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner">
-              <div class="container mb-4">
-        <div class="alert alert-info text-center rounded-pill shadow-sm" role="alert">
-         📅 <strong>Terakhir diperbarui:</strong> 07 Oktober 2025
-  </div>
-</div>
-
-              <div class="carousel-item active">
-                <img src="berita7.png" class="d-block w-100 img-fluid" alt="Pelatihan Satpam - Slide 1">
-              </div>
-              <div class="carousel-item">
-                <img src="berita8.png" class="d-block w-100 img-fluid" alt="Pelatihan Satpam - Slide 2">
-              </div>
-              <div class="carousel-item">
-                <img src="berita9.png" class="d-block w-100 img-fluid" alt="Pelatihan Satpam - Slide 3">
-              </div>
-               <div class="carousel-item">
-                <img src="berita10.png" class="d-block w-100 img-fluid" alt="Pelatihan Satpam - Slide 3">
-              </div>
-               <div class="carousel-item">
-                <img src="berita11.png" class="d-block w-100 img-fluid" alt="Pelatihan Satpam - Slide 3">
-              </div>
-               <div class="carousel-item">
-                <img src="berita12.png" class="d-block w-100 img-fluid" alt="Pelatihan Satpam - Slide 3">
-               </div>
-               <div class="carousel-item">
-                <img src="berita13.png" class="d-block w-100 img-fluid" alt="Pelatihan Satpam - Slide 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBerita1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
-              <span class="visually-hidden">Sebelumnya</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselBerita1" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
-              <span class="visually-hidden">Berikutnya</span>
-            </button>
-          </div>
-          <div class="card-body p-4">
-            <h5 class="card-title fw-bold text-primary-custom mb-3">Etika Yang Tidak Boleh Dilakukan Oleh SECURITY</h5>
-            <p class="card-text text-muted">
-              “Menjadi Security bukan hanya soal menjaga pintu, tapi menjaga kepercayaan.”
-              Profesionalisme, disiplin, dan etika adalah kunci utama menjaga keamanan dan kehormatan profesi.
+      <!-- ITEM 1 -->
+      <div class="col-md-4">
+        <div class="bg-white shadow-sm rounded h-100">
+          <img src="kegiatan1.jpg" class="img-fluid rounded-top" alt="Kegiatan PSBI">
+          <div class="p-4">
+            <small class="text-muted">19 Januari 2026</small>
+            <h5 class="mt-2">Kegiatan Pembinaan</h5>
+            <p class="mb-0">
+              Kegiatan pembinaan ini dilakukan agar fokus
+              pada peningkatan kompetensi teknis, mental, dan profesionalisme.
             </p>
-            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill mt-2">Baca Selengkapnya</a>
           </div>
         </div>
       </div>
 
-      <!-- Card Berita 2 -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
-          <div id="carouselBerita2" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner"></div> 
-            <div class="container mb-4">
-  <div class="alert alert-info text-center rounded-pill shadow-sm" role="alert">
-    📅 <strong>Terakhir diperbarui:</strong> 7 Oktober 2025
-  </div>
-</div>
-
-            <div class="carousel-item active">
-                <img src="HUT TNI.png" class="d-block w-100 img-fluid" alt="Perayaan HUT TNI">
-              </div>
-
-
-              
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBerita2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
-              <span class="visually-hidden">Sebelumnya</span>
-            </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselBerita2" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
-              <span class="visually-hidden">Berikutnya</span>
-            </button>
-          </div>
-          <div class="card-body p-4">
-            <h5 class="card-title fw-bold text-primary-custom mb-3"> 5 Oktober 2025 </h5>
-            <p class="card-text text-muted">
-             TNI adalah garda terdepan menjaga persatuan dan kedaulatan bangsa. Mari kita hargai jasa mereka dengan menjaga persatuan dan perdamaian.
+      <!-- ITEM 2 -->
+      <div class="col-md-4">
+        <div class="bg-white shadow-sm rounded h-100">
+          <img src="kegiatan2.jpg" class="img-fluid rounded-top" alt="Briefing Satpam">
+          <div class="p-4">
+            <small class="text-muted">06 Januari 2026</small>
+            <h5 class="mt-2">Briefing Personel Harian</h5>
+            <p class="mb-0">
+              Briefing rutin untuk memastikan kesiapan dan
+              kedisiplinan personel keamanan.
             </p>
-            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill mt-2">Baca Selengkapnya</a>
           </div>
         </div>
       </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-    <!-- Profil -->
-    <section id="profil" class="mb-5">
-      <h2 class="section-title text-primary-custom">Profil Perusahaan</h2>
-        <div class="col-mb-10">
-        
-          <p>Sejak berdiri tahun 2018, PT.PANCA/PSBI telah membuktikan diri sebagai penyedia jasa keamanan terpadu yang profesional dan berkomitmen. Kami berpengalaman dalam melayani kebutuhan keamanan di berbagai sektor, baik swasta maupun pemerintahan.</p>
-          <p>PT PANCA SATRIA BUANA INDONESIA yang dikenal dengan PT.PANCA/PSBI merupakan salah satu perusahaan yang sudah sangat berpengalaman dalam bidang keamanan.</p>
-          <p>Dengan didukung sumber daya yang prima serta komitmen yang tinggi PT.PANCA/PSBI mempunyai integritas dan komitmen yang tinggi kepada semua kliennya agar setiap kerjasama yang disepakati akan saling mengutungkan kedua belah pihak. </p>
-        </div>
-      </div>
-      </div>
-    </section>
 
-  <!-- Layanan Kami -->
-<section id="layanan" class="py-5 bg-white">
+<!-- CTA -->
+<section class="section bg-dark text-white text-center">
   <div class="container">
-    <h2 class="section-title text-center text-primary-custom mb-5">Layanan Kami</h2>
-    <div class="row g-4">
-
-      <!-- Layanan 1 -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-card bg-light p-4 rounded-4 shadow-sm text-center h-100">
-          <i class="bi bi-person-badge fs-1 text-primary-custom mb-3"></i>
-          <h5 class="fw-semibold mb-2">Undercover Security Guards</h5>
-          <p class="text-muted small">Personel pengamanan tidak berseragam untuk kebutuhan investigasi dan pengamanan internal khusus.</p>
-        </div>
-      </div>
-
-      <!-- Layanan 2 -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-        <div class="service-card bg-light p-4 rounded-4 shadow-sm text-center h-100">
-          <i class="bi bi-calendar2-check fs-1 text-primary-custom mb-3"></i>
-          <h5 class="fw-semibold mb-2">Security Event / VIP</h5>
-          <p class="text-muted small">Layanan pengamanan acara besar, pejabat, atau tamu penting dengan pengamanan profesional dan rencana matang.</p>
-        </div>
-      </div>
-
-      <!-- Layanan 3 -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-card bg-light p-4 rounded-4 shadow-sm text-center h-100">
-          <i class="bi bi-building fs-1 text-primary-custom mb-3"></i>
-          <h5 class="fw-semibold mb-2">Security Gedung & Pabrik</h5>
-          <p class="text-muted small">Penjagaan harian dan sistem keamanan untuk gedung perkantoran, apartemen, dan area industri.</p>
-        </div>
-      </div>
-
-      <!-- Layanan 4 -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
-        <div class="service-card bg-light p-4 rounded-4 shadow-sm text-center h-100">
-          <i class="bi bi-shield-check fs-1 text-primary-custom mb-3"></i>
-          <h5 class="fw-semibold mb-2">Konsultan Keamanan</h5>
-          <p class="text-muted small">Analisis risiko, manajemen krisis, dan perencanaan keamanan jangka panjang oleh tim profesional kami.</p>
-        </div>
-      </div>
-
-      <!-- Layanan 5 -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-card bg-light p-4 rounded-4 shadow-sm text-center h-100">
-          <i class="bi bi-shield-lock fs-1 text-primary-custom mb-3"></i>
-          <h5 class="fw-semibold mb-2">Peralatan Keamanan</h5>
-          <p class="text-muted small">Kami menggunakan peralatan keamanan modern dan terpercaya untuk memastikan perlindungan maksimal bagi aset dan lingkungan Anda.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Visi Misi -->
-    <section id="visi" class="mb-5">
-      <h2 class="section-title text-primary-custom">Visi, Misi & Nilai</h2>
-      <h5>Visi</h5>
-      <p>Menjadi perusahaan keamanan nasional yang unggul dan maksimal dalam pelayanan.</p>
-      <h5>Misi</h5>
-      <p>Memberikan rasa aman agar mitra fokus pada bisnis utama.</p>
-      <h5>Nilai</h5>
-      <p><strong>SAFE, SECURE, SUSTAIN</strong> Kepercayaan, integritas & hukum.</p>
-    </section>
-
-<!-- Fitur Unggulan -->
-<section id="fitur" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-5 text-primary-custom">Fitur Unggulan</h2>
-    <div class="row text-center g-4 justify-content-center">
-      
-      <!-- Keamanan Profesional -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="bg-white shadow-sm p-4 rounded-4 h-100">
-          <img src="logo-psbi.jpeg" alt="Satria Buana Indonesia" class="img-fluid mb-3" style="max-height: 100px;">
-          <h5 class="fw-bold mb-2">Keamanan Profesional</h5>
-          <p class="text-muted">Didukung personil keamanan terlatih dan sistem pengamanan modern untuk berbagai kebutuhan industri dan komersial.</p>
-        </div>
-      </div>
-
-      <!-- Layanan Kebersihan -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="bg-white shadow-sm p-4 rounded-4 h-100">
-          <img src="panca cs.jpeg" alt="Panca Cleaning Service" class="img-fluid mb-3" style="max-height: 100px;">
-          <h5 class="fw-bold mb-2">Layanan Kebersihan</h5>
-          <p class="text-muted">Cleaning service profesional dengan standar kebersihan tinggi untuk gedung perkantoran, mall, dan kawasan industri.</p>
-        </div>
-      </div>
-
-      <!-- K9 Deteksi -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="bg-white shadow-sm p-4 rounded-4 h-100">
-          <img src="panca k9.jpeg" alt="K9 Unit" class="img-fluid mb-3" style="max-height: 100px;">
-          <h5 class="fw-bold mb-2">K9 Deteksi Khusus</h5>
-          <p class="text-muted">Unit anjing pelacak terlatih untuk mendeteksi bahan peledak dan keamanan khusus skala tinggi.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Segmen Pasar -->
-<section id="segmen-pasar">
-  <h2 class="section-title text-primary-custom">Segmen Pasar</h2>
-    <div class="col-md-15 text-start">
-      <p>
-        PT. PANCA SATRIA BUANA INDONESIA (PSBI) secara proaktif memasarkan produk dan layanan kepada berbagai segmen potensial, seperti:
-      </p>
-      <ul>
-        <li>Mall</li>
-        <li>Hotel</li>
-        <li>Pergudangan</li>
-        <li>Event Weeding Organizer</li>
-        <li>Pengawalan (bodyguard)</li>
-        <li>Pabrik</li>
-        <li>Industri Minyak & Gas</li>
-        <li>Perkantoran</li>
-        <li>Sekolahan / Universitas</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-     <!-- Partner -->
-    <section id="partnerkami" class="mb-5">
-      <h2 class="section-title text-primary-custom">Partner Kami</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <ul>
-            <li>CV Afta sejahtera Prima,Jl.Pegambiran No.42 Rawamangun, Jakarta Timur</li>
-            <li>Mentari Internasional School, Jl.H.jian,Cipete,Jakarta Selatan</li>
-            <li>Mr. Larry Ridwan, Jl.Kebon Nanas III No.11, Simpruk, Jakarta selatan</li>
-            <li>Yayasan Perkembangan Anak Indonesia, Kramat Pela-Kebayoran Baru Jakarta
-                Selatan</li>
-            <li>PT. PRO Intertech Indonesia, Prastowo Resident, Jakarta Selatan</li>
-            <LI>PT. Indo Genesis Medika, Jl. Dr. Saharjo No.45 Komplek Infinia Park, Jakarta Selatan</LI>
-            <li>PT. Zeelandia Indonesia, Jl. M. Toha KM3, Tangerang</li>
-            <li>PT. Hosan Mineral Indonesia, Jl.Soka, Kawasan Industri Delta Silicon 3 CIKARANG</li>
-            <li>New Bogor Masion, Jl Drs Jl.Achmad Sobana Bogor Utara</li>
-            <li>PT Merak Kencana Sakti, Pergudangan Sunter</li>
-            <li>Masgroup, Jl. Kisamaun No.1, Kota Tangerang</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul>
-            <li>PT. Segara Husada Mandiri, Pulo Gadung, Jakarta Timur</li>
-            <li>PT. Tirta Medika Jaya, Jakarta Selatan</li>
-            <li>PT. Lippo Karawaci TBK, Apartemen Milennium Village Lippo Karawaci, Tangerang</li>
-            <li>CV. Multi Jasa Utama (Cikupa Mas), Tangerang</li>
-            <li>PT. Gandum Mas Kencana, Jl. M. Toha KM3, Tangerang</li>
-            <li>PT. Gudang Segar Indonesia, Jl. Kebayoran Lama No.42D Jakarta selatan</li>
-            <li>Menara Danareksa, Jl Medan Merdeka Selatan , Jakarta Pusat</li>
-            <li>Waagner Biro Indonesia, Kawasan Modern Cikande</li>
-            <li>Cluster Britania, Bekasi Jl Jejalenja, Tambun Utara</li>
-          </ul>
-        </div>
-      </div>
-      </ul>
-      </div>
-    </section>
-
-    <!-- Logo Partner Section -->
-  <section id="partner" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">LogoPartner</h2>
-    <div class="row g-4 justify-content-center align-items-center">
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="waggner.jpg" alt="Waggner" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="amanzana.jpeg" alt="Amanzana" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="zeelandia.jpg" alt="Zeelandia" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="guccitex.jpeg" alt="Guccitex" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="gandum.jpeg" alt="Gandum" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="lippo.jpeg" alt="Lippo" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="Afta.jpeg" alt="Afta" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="L vilagge.jpeg" alt="L Vilagge" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="holiday.jpeg" alt="Holiday" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="mentari.jpeg" alt="Mentari" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="bogor.jpeg" alt="Bogor" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="cikupamas.jpeg" alt="Cikupamas" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="sompo.jpeg" alt="Sompo" class="img-fluid partner-logo">
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="indo.jpeg" alt="Sompo" class="img-fluid partner-logo">
-    </div>
-    <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="britania.png" alt="Sompo" class="img-fluid partner-logo">
-    </div>
-       <div class="col-6 col-sm-4 col-md-2 text-center">
-        <img src="masgroup.png" alt="Sompo" class="img-fluid partner-logo">
-    </div>
-  </div>
-  </div>
-  </div>
-</section>
-
-<!-- Rekrutmen -->
-    <section id="rekrutmen" class="mb-5">
-      <h2 class="section-title text-primary-custom">Rekrutmen</h2>
-      <ul>
-        <li>Usia : Min 21 Th - Max 35 Th</li>
-        <li>Pendidikan : SLTA/AKADEMIS/S1</li>
-        <li>Postur Tubuh : Dalam kondisi baik</li>
-        <li>Tidak bertato, tidak berkaca mata, tidak bertidik</li>
-        <li>Surat kelakukan baik dari kepolisian</li>
-        <li>Surat Kesehatan</li>
-        <li>Keterangan Bebas Narkoba</li>
-        <li>Lulus dalam mengikuti tes standar perusahaan kami</li>
-      </ul>
-      <div class="row gallery g-4">
-  <div class="col-md-3">
-    <img src="rekrutmen4.jpeg" alt="dokumentasi1" class="img-fluid equal-img">
-  </div>
-  <div class="col-md-3">
-    <img src="rekrutmen2.jpeg" alt="dokumentasi2" class="img-fluid equal-img">
-  </div>
-  <div class="col-md-3">
-    <img src="rekrutmen3.jpeg" alt="dokumentasi3" class="img-fluid equal-img">
-  </div>
-  <div class="col-md-3">
-    <img src="rekrutmen1.jpeg" alt="dokumentasi4" class="img-fluid equal-img">
-  </div>
-</div>
-
-    <!-- Kontak -->
-<section id="kontak" class="mb-5">
-  <h2 class="section-title text-primary-custom">Kontak Kami</h2>
-  
-  <p>
-    <strong>📍 Alamat:</strong>
-    <a href="https://www.google.com/maps?q=Graha+Kresna,+Jl.+Arjuna+Utara+No.28,+Tanjung+Duren+Selatan,+Jakarta+Barat+11470"
-       target="_blank" rel="noopener noreferrer">
-      Graha Kresna, Jl. Arjuna Utara No.28, Tanjung Duren Selatan, Jakarta Barat 11470
+    <h3 class="mb-3">Butuh Layanan Keamanan?</h3>
+    <a href="kontak.html" class="btn btn-danger rounded-pill px-4">
+      Hubungi Kami
     </a>
-  </p>
-  
-  <p>
-    <strong>✉️ Email:</strong>
-    <a href="mailto:pancasatriabuanaindonesia@gmail.com">
-      pancasatriabuanaindonesia@gmail.com
-    </a>
-  </p>
-  
-  <p>
-    <strong>📱 Telp:</strong>
-    <a href="https://wa.me/6281282785559" target="_blank" rel="noopener noreferrer">
-      0812 8278 5559
-    </a>
-  </p>
-</section>
-
-<!-- Dokumentasi -->
-<section id="dokumentasi" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-primary-custom text-center mb-5">Dokumentasi Kegiatan</h2>
-
-    <!-- Filter Dropdown -->
-    <div class="text-center mb-4">
-      <select id="yearFilter" class="form-select w-auto mx-auto shadow-sm rounded-3">
-        <option value="all">Semua Tahun</option>
-        <option value="2024">Tahun 2024</option>
-        <option value="2023">Tahun 2023</option>
-      </select>
-    </div>
-
-    <!-- Dokumentasi Tahun 2024 -->
-    <div class="year-section mb-5" data-year="2024">
-      <h3 class="text-center text-dark mb-4">Dokumentasi Tahun 2024</h3>
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
-            <img src="event-1.jpeg" class="card-img-top object-cover" alt="Workshop Internal">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Workshop Internal</h5>
-              <p class="card-text text-muted">Pelatihan internal untuk peningkatan keterampilan tim operasional di kantor pusat.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
-            <img src="event-2.jpeg" class="card-img-top object-cover" alt="Kunjungan Lapangan">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Kunjungan Lapangan</h5>
-              <p class="card-text text-muted">Kunjungan tim manajemen ke site proyek untuk memastikan mutu dan standar pelayanan.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
-            <img src="event-3.jpeg" class="card-img-top object-cover" alt="Event Organizer">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Event Organizer</h5>
-              <p class="card-text text-muted">Layanan keamanan PSBI dalam event internasional ONE Championship.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr class="my-5">
-
-    <!-- Dokumentasi Tahun 2023 -->
-    <div class="year-section" data-year="2023">
-      <h3 class="text-center text-dark mb-4">Dokumentasi Tahun 2023</h3>
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
-            <img src="event-4.jpeg" class="card-img-top object-cover" alt="Apel Pagi Guccitex">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Apel Pagi Guccitex</h5>
-              <p class="card-text text-muted">Pelaksanaan apel pagi di kawasan industri Guccitex sebagai bentuk kedisiplinan.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
-            <img src="event-5.jpeg" class="card-img-top object-cover" alt="Gathering & Refreshment">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Gathering & Refreshment</h5>
-              <p class="card-text text-muted">Ajang penyegaran dan kebersamaan di luar rutinitas kerja untuk seluruh tim.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
-            <img src="event-6.jpeg" class="card-img-top object-cover" alt="Family Gathering">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Family Gathering</h5>
-              <p class="card-text text-muted">Acara keluarga sebagai bentuk apresiasi atas kontribusi karyawan selama tahun berjalan.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
-
-<!-- Footer -->
-<footer class="footer bg-dark text-white pt-5 pb-3 mt-5">
-  <div class="container text-center">
-    <!-- Logo & Nama Perusahaan -->
-    <h5 class="fw-bold mb-2">PT. PANCA SATRIA BUANA INDONESIA</h5>
-    <p class="text-white-50 mb-3 small">Security Service </p>
-
-    <!-- Garis pemisah -->
-    <hr class="border-light opacity-25 my-3" style="max-width: 400px; margin-inline: auto;">
-
-    <!-- Copyright -->
-    <small class="text-white-50 d-block">&copy; 2025 PT. PANCA SATRIA BUANA INDONESIA. All rights reserved.</small>
-  </div>
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <small>© 2025 PT. PANCA SATRIA BUANA INDONESIA</small>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
