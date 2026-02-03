@@ -5,32 +5,68 @@
   <title>Profil Perusahaan | PT. PANCA SATRIA BUANA INDONESIA</title>
 
   <!-- SEO -->
-  <meta name="description" content="Profil PT. PANCA SATRIA BUANA INDONESIA (PSBI), perusahaan jasa keamanan profesional dan terpercaya.">
+  <meta name="description" content="Profil PT. Panca Satria Buana Indonesia (PSBI), perusahaan jasa pengamanan profesional dan terpercaya.">
 
   <!-- Bootstrap & Font -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      color: #111;
     }
     .page-header {
       background: #111;
       color: #fff;
-      padding: 120px 0 80px;
+      padding: 130px 0 90px;
       text-align: center;
     }
     .section {
-      padding: 80px 0;
+      padding: 90px 0;
     }
+
+  /* ===== ISO CORPORATE STYLE ===== */
+  .iso-box {
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    padding: 28px 22px;
+    background: #fff;
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iso-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.08);
+  }
+
+  .iso-icon {
+    width: 65px;              /* 🔑 DIPERKECIL */
+    height: auto;
+    margin-bottom: 16px;
+    object-fit: contain;
+  }
+
+  .iso-box h5 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .iso-box p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
   </style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">PSBI</a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -41,7 +77,7 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link active" href="profil.html">Profil</a></li>
         <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
-        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link" href="rekrutmen.html">Rekrutmen</a></li>
       </ul>
     </div>
   </div>
@@ -50,8 +86,8 @@
 <!-- PAGE HEADER -->
 <section class="page-header">
   <div class="container">
-    <h1 class="fw-bold">Profil Perusahaan</h1>
-    <p class="mt-2">PT. PANCA SATRIA BUANA INDONESIA</p>
+    <h1 class="fw-bold mb-2">Profil Perusahaan</h1>
+    <p class="text-muted mb-0">PT. Panca Satria Buana Indonesia</p>
   </div>
 </section>
 
@@ -59,18 +95,31 @@
 <section class="section">
   <div class="container">
     <div class="row justify-content-center text-center">
-      <div class="col-lg-8">
-        <h2 class="fw-bold mb-4">Tentang Kami</h2>
+      <div class="col-lg-9">
+
+        <h2 class="fw-bold mb-4">Tentang Perusahaan</h2>
+
         <p>
-          PT. PANCA SATRIA BUANA INDONESIA (PSBI) adalah perusahaan jasa keamanan
-          profesional yang berdiri sejak tahun 2018. Kami berfokus pada penyediaan
-          solusi pengamanan terpadu dengan standar tinggi, disiplin, dan integritas.
+          PT. Panca Satria Buana Indonesia (PSBI) merupakan perusahaan jasa pengamanan
+          profesional yang berdiri sejak tahun 2018. Sejak awal berdiri, PSBI
+          berkomitmen untuk memberikan layanan pengamanan yang tangguh, profesional,
+          dan dapat diandalkan bagi seluruh mitra kerja.
         </p>
+
         <p>
-          PSBI melayani berbagai sektor seperti perkantoran, industri, komersial,
-          event, hingga pengamanan VIP dengan dukungan personel terlatih dan
-          sistem kerja yang profesional.
+          Dengan dukungan sumber daya manusia yang terlatih serta sistem kerja yang
+          terstruktur, PSBI menjunjung tinggi nilai integritas, profesionalisme,
+          dan komitmen dalam setiap kerja sama yang dijalankan, guna menciptakan
+          hubungan yang saling menguntungkan dan berkelanjutan.
         </p>
+
+        <p>
+          PSBI melayani berbagai sektor, meliputi perkantoran, kawasan industri,
+          area komersial, kegiatan khusus (event), hingga pengamanan khusus (VIP),
+          dengan standar operasional yang mengacu pada praktik terbaik industri
+          jasa pengamanan.
+        </p>
+
       </div>
     </div>
   </div>
@@ -79,23 +128,24 @@
 <!-- VISI MISI -->
 <section class="section bg-light">
   <div class="container">
-    <div class="row g-5">
+    <div class="row g-5 align-items-start">
 
       <div class="col-md-6">
         <h3 class="fw-bold mb-3">Visi</h3>
         <p>
-          Menjadi perusahaan jasa keamanan nasional yang profesional,
-          terpercaya, dan berintegritas tinggi.
+          Menjadi perusahaan jasa pengamanan nasional bertaraf internasional
+          yang unggul dalam kualitas layanan, profesionalisme personel,
+          serta keandalan sistem pengamanan.
         </p>
       </div>
 
       <div class="col-md-6">
         <h3 class="fw-bold mb-3">Misi</h3>
-        <ul>
-          <p>
-            Memberikan rasa aman agar mitra fokus pada bisnis utama.
+        <p>
+          Membangun dan menjaga kerja sama yang solid dengan mitra dan klien,
+          menciptakan rasa aman dan nyaman di lingkungan kerja,
+          serta memungkinkan mitra fokus pada pengembangan bisnis dan aktivitas utama.
         </p>
-        </ul>
       </div>
 
     </div>
@@ -103,29 +153,36 @@
 </section>
 
 <!-- NILAI PERUSAHAAN -->
-<section class="section text-center">
-  <div class="container">
+<section class="section">
+  <div class="container text-center">
     <h2 class="fw-bold mb-5">Nilai-Nilai Perusahaan</h2>
-    <div class="row g-4">
+
+    <div class="row g-4 justify-content-center">
 
       <div class="col-md-4">
-        <div class="p-4 border rounded">
-          <h5>Profesionalisme</h5>
-          <p>Menjalankan tugas sesuai standar dan prosedur kerja.</p>
+        <div class="p-4 border rounded h-100">
+          <h5 class="fw-semibold mb-2">Profesionalisme</h5>
+          <p class="mb-0">
+            Menjalankan tugas sesuai standar operasional dan etika kerja yang berlaku.
+          </p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="p-4 border rounded">
-          <h5>Integritas</h5>
-          <p>Jujur, bertanggung jawab, dan dapat dipercaya.</p>
+        <div class="p-4 border rounded h-100">
+          <h5 class="fw-semibold mb-2">Integritas</h5>
+          <p class="mb-0">
+            Menjunjung tinggi kejujuran, tanggung jawab, dan kepercayaan.
+          </p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="p-4 border rounded">
-          <h5>Disiplin</h5>
-          <p>Menjaga konsistensi dan kepatuhan dalam bekerja.</p>
+        <div class="p-4 border rounded h-100">
+          <h5 class="fw-semibold mb-2">Disiplin</h5>
+          <p class="mb-0">
+            Konsisten dalam kepatuhan terhadap prosedur dan peraturan kerja.
+          </p>
         </div>
       </div>
 
@@ -133,9 +190,97 @@
   </div>
 </section>
 
+<!-- ISO, SOP & SERTIFIKASI -->
+<section class="section bg-light">
+  <div class="container text-center">
+
+    <h2 class="fw-bold mb-3">Standar Mutu & Sertifikasi</h2>
+    <p class="text-muted mb-5">
+      Sistem kerja PSBI mengacu pada standar internasional, SOP internal,
+      dan praktik terbaik industri jasa pengamanan.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- ISO 9001 -->
+      <div class="col-md-4">
+        <div class="iso-box h-100">
+          <img src="iso2015.png" alt="ISO 9001" class="iso-icon">
+          <h5 class="fw-semibold">ISO 9001:2015</h5>
+        </div>
+      </div>
+
+      <!-- ISO 45001 -->
+      <div class="col-md-4">
+        <div class="iso-box h-100">
+          <img src="iso2018.png" alt="ISO 45001" class="iso-icon">
+          <h5 class="fw-semibold">ISO 45001:2018</h5>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CTA CORPORATE -->
+<section class="section bg-dark text-white">
+  <div class="container text-center">
+
+    <h3 class="fw-semibold mb-3">
+      Kerja Sama Jasa Pengamanan Profesional
+    </h3>
+
+    <p class="text-muted mb-4">
+      PT. Panca Satria Buana Indonesia siap menjadi mitra strategis
+      dalam penyediaan jasa pengamanan dan layanan pendukung fasilitas.
+    </p>
+
+    <a href="https://wa.me/6281282785559" target="_blank"
+       class="btn btn-outline-light rounded-pill px-5">
+      <i class="bi bi-whatsapp me-2"></i> Konsultasi & Kerja Sama
+    </a>
+
+    <hr class="border-secondary my-5">
+
+    <div class="row justify-content-center text-start">
+      <div class="col-md-8">
+
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-geo-alt-fill me-3 text-danger"></i>
+          <small>
+            Kantor Operasional:<br>
+            Graha Kresna, Jl. Arjuna Utara No.28,<br>
+            Tanjung Duren Selatan, Jakarta Barat 11470
+          </small>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <i class="bi bi-envelope-fill me-3 text-danger"></i>
+          <small>
+            <a href="mailto:pancasatriabuanaindonesia@gmail.com"
+               class="text-white text-decoration-none">
+              pancasatriabuanaindonesia@gmail.com
+            </a>
+          </small>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <i class="bi bi-telephone-fill me-3 text-danger"></i>
+          <small>+62 812 8278 5559</small>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3">
-  <small>© 2025 PT. PANCA SATRIA BUANA INDONESIA</small>
+<footer class="bg-black text-white text-center py-3">
+  <small>© 2025 PT. Panca Satria Buana Indonesia</small>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
